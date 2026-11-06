@@ -1,0 +1,49 @@
+shanto/
+├── build.gradle.kts
+├── settings.gradle.kts
+├── gradle/
+│   └── libs.versions.toml
+└── app/
+    ├── build.gradle.kts
+    └── src/
+        └── main/
+            ├── AndroidManifest.xml
+            ├── res/
+            │   ├── layout/
+            │   │   ├── widget_trade_pulse.xml
+            │   │   └── overlay_floating_copilot.xml
+            │   ├── values/
+            │   │   ├── colors.xml
+            │   │   └── strings.xml
+            │   └── xml/
+            │       └── trade_pulse_widget_info.xml
+            └── java/com/example/
+                ├── MainActivity.kt
+                ├── data/
+                │   ├── MarketRepository.kt
+                │   └── db/
+                │       ├── TradeDao.kt
+                │       └── TradeDatabase.kt
+                ├── engine/
+                │   └── TradeProbabilityEngine.kt
+                ├── model/
+                │   └── TradingModels.kt
+                ├── service/
+                │   └── FloatingTradeService.kt
+                ├── ui/
+                │   ├── TradeViewModel.kt
+                │   ├── theme/
+                │   │   ├── Color.kt
+                │   │   └── Theme.kt
+                │   ├── components/
+                │   │   ├── CandlestickChart.kt
+                │   │   ├── ConfluenceList.kt
+                │   │   ├── ProbabilityMeter.kt
+                │   │   └── TradeRiskCalculator.kt
+                │   └── screens/
+                │       ├── HomeScreenWidgetScreen.kt
+                │       ├── LiveMarketScreen.kt
+                │       ├── TradeAnalyzerScreen.kt
+                │       └── TradeJournalScreen.kt
+                └── widget/
+                    └── TradePulseWidgetProvider.kt
